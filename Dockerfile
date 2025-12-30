@@ -9,6 +9,7 @@ WORKDIR /app
 # MySQL dependency
 RUN apt-get update && apt-get install -y \
     default-libmysqlclient-dev \
+    pkg-config \
  && rm -rf /var/lib/apt/lists/*
 
 # Python deps (cache friendly)
