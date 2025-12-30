@@ -8,6 +8,7 @@ WORKDIR /app
 
 # MySQL dependency
 RUN apt-get update && apt-get install -y \
+    build-essential \
     default-libmysqlclient-dev \
     pkg-config \
  && rm -rf /var/lib/apt/lists/*
